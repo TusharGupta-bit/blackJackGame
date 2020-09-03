@@ -1,0 +1,43 @@
+/* challenge - 5 */
+
+.black-jack-area{
+    height: 50vh;
+    background-color: rgb(39, 95, 39);
+}
+
+.cardimg-element{
+    width: 20%;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: 0px 10px 15px black;
+}
+.btn-style{
+    width: 25%;
+    margin: 10px;
+}
+.background-media{
+    display: none;
+}
+
+@media screen and (min-width: 0px) and (max-width: 450px){
+    body{
+        overflow-x: hidden;
+    }
+   .mediaquerystuff{
+       display: none;
+   }
+   .heading-main{
+      padding-top: 20%;
+      font-size: 3.5rem;
+   }
+   .background-media{
+       background: url(../images/bg.jpg) center center no-repeat;
+       background-size: cover;
+       height: 100vh;
+   }
+   .heading-bottom{
+       color: red;
+       margin-top: 40%;
+       font-size: 3rem;
+   }
+}
