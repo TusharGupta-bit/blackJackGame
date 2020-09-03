@@ -14,9 +14,9 @@ let blackjackGame = {
 
 const YOU = blackjackGame['you'];
 const DEALER = blackjackGame['dealer'];
-const hitSound = new Audio('../sounds/swish.m4a');
-const winSound = new Audio('../sounds/cash.mp3');
-const lossSound = new Audio('../sounds/aww.mp3');
+const hitSound = new Audio('sounds/swish.m4a');
+const winSound = new Audio('sounds/cash.mp3');
+const lossSound = new Audio('sounds/aww.mp3');
 
 let hitBtn = document.getElementById('blackjack-hit-button').addEventListener('click', blackjackHit);
 let standBtn = document.getElementById('blackjack-stand-button').addEventListener('click', dealerLogic);
@@ -41,7 +41,7 @@ function randomCard() {
 function showCardHit(card, activePlayer) {
     if (activePlayer['score'] <= 21) {
         let cardImg = document.createElement('img');
-        cardImg.src = `../images/${card}.png`;
+        cardImg.src = `images/${card}.png`;
         cardImg.setAttribute('class', 'cardimg-element');
         document.querySelector(activePlayer['div']).appendChild(cardImg);
         hitSound.play();
